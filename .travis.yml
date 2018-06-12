@@ -9,8 +9,8 @@ script:
   - npm run build
 deploy:
   provider: pages
-  skip-cleanup: true
+  skip_cleanup: true
   github-token: $github_key
-  keep-history: true
+  local_dir: build
   on:
     branch: master
